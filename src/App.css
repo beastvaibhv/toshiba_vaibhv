@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+ 
+  height: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.sidebar {
+  background-color: white;
   min-height: 100vh;
+  width: 14%;
+  display: flex;
+  min-width: 17.5rem;
+  max-width: 20rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  justify-content: space-between;
+}
+
+.sidebar-button {
+  display: flex;
+  min-width: 16.5rem;
+  max-width: 20rem;
+  padding: 0.5rem 1.25rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  border-radius: 1rem;
+  justify-content: space-between;
+  height:1.5rem
+}
+
+.sidebar-btn-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+.bar{
+ 
+  height:1rem;
+  align-items: center;
+  background-color: white;
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 1.25rem;
+  display: flex;
+  margin-inline: 1rem;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  align-self:stretch;
+}
+.text-wrapper{
+  color: var(--variable-collection-mid-gray);
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  line-height: 14px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+.user{
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+  align-items: center;
+}
+.sidebar-lower{
   display: flex;
   flex-direction: column;
+  
+}
+.main-body {
+  
+  height: 100vh;
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.body-top{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+}
+
+.widget{
+  background-color: white;
+display: flex;
+min-width: 20rem;
+min-height: 12.5rem;
+padding: 1.5rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 1rem;
+}
+
+.top-1{
+  display: flex;
+padding-bottom: 1rem;
+align-items: flex-start;
+gap: 0.5rem;
+align-self: stretch;
+color: #131313;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.0125rem;
+}
+
+.percentage-text{
+  color: #131313;
+font-family: Inter;
+font-size: 3rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.125rem;
+padding-right: 0.5rem;
+}
+.speculation{
+  color: #454545;
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01875rem;
+}
+.links{
+  display: flex;
+padding-top: 1rem;
+align-items: flex-end;
+gap: 0.5rem;
+flex: 1 0 0;
+}
+.links>div{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+}
+.link-text{
+  color:  #734A00;
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01875rem;
+}
+
+.widget-3 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  min-width: 20rem;
+  min-height: 12.5rem;
+  flex-direction: column;
+  align-items: center; /* Adjusted to center items horizontally */
+  gap: 0.5rem;
+  border-radius: 1rem;
+ 
+  padding-top:1rem; /* Removed extra margin-top */
+}
+
+.top-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Adjusted to center items vertically */
+  align-self: stretch;
+  color: #131313;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.0125rem;
+
+}
+
+.links1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Adjusted to stack items vertically */
+}
+
+.links1 > div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  padding: 1rem; /* Adjusted padding for better spacing */
 }
 
-.App-link {
-  color: #61dafb;
+.img-percentage {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.percentage-2 {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.customer{
+  display: flex;
+height: 25rem;
+min-height: 25rem;
+padding: 1.5rem 0rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+flex: 1 0 0;
+}
+
+.user-chat{
+  display: flex;
+padding: 1rem;
+align-items: center;
+gap: 0.75rem;
+align-self: stretch;
+border-radius: 1rem;
 }
